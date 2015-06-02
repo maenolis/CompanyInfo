@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+</head>
+<body>
+
+	<h3>WS Instructions</h3>
+	<p>Locations at path "server:port/CompanyInfo/rest/locations"</p>
+	<p>Departments at path "server:port/CompanyInfo/rest/departments"</p>
+	<p>Departments per Location at path
+		"server:port/CompanyInfo/rest/departmentsPerLocation/{locationId}"</p>
+	<p>Employees at path "server:port/CompanyInfo/rest/employees"</p>
+	<p>Employees per Department at path
+		"server:port/CompanyInfo/rest/employeesPerDepartment/{departmentId}"</p>
+	<p>Employee's details at path
+		"server:port/CompanyInfo/rest/employeeDetails/{employeeId}"</p>
+	<p>Locations in xml format at path
+		"server:port/CompanyInfo/rest/locationsInXml"</p>
+	<p>Departments in xml format at path
+		"server:port/CompanyInfo/rest/departmentsInXml"</p>
+	<p>Departments per Location in xml format at path
+		"server:port/CompanyInfo/rest/departmentsPerLocationInXml/{locationId}"</p>
+	<p>Employees in xml format at path
+		"server:port/CompanyInfo/rest/employeesInXml"</p>
+	<p>Employees per Department in xml format at path
+		"server:port/CompanyInfo/rest/employeesPerDepartmentInXml/{departmentId}"</p>
+	<p>Employee's details in xml format at path
+		"server:port/CompanyInfo/rest/employeeDetailsInXml/{employeeId}"</p>
+	<p>Employees list querying names in xml format at path
+		"server:port/CompanyInfo/rest/employeesByNameInXml/{queryString}"</p>
+
+	<h3>WS Client Instructions</h3>
+	<p>Use class org.maenolis.CompanyInfo.client.WsClient</p>
+	<p>Initialize WsClient("{server:port}/CompanyInfo/rest/") eg WsClient wc =
+		new WsClient("http://localhost:8080/CompanyInfo/rest/");</p>
+	<p>function showLocations() : presents xml received from
+		"server:port/CompanyInfo/rest/locationsInXml"</p>
+	<p>function showDepartments() : presents xml received from
+		"server:port/CompanyInfo/rest/departmentsInXml"</p>
+	<p>function showDepartmentsAtLocation(int locno) : presents xml
+		received from
+		"server:port/CompanyInfo/rest/departmentsPerLocationInXml/{locno}"</p>
+	<p>function showEmployeesAtDepartment(int deptno) : presents xml
+		received from
+		"server:port/CompanyInfo/rest/employeesPerDepartmentInXml/{deptno}"</p>
+	<p>function showEmployee(int empno) : presents xml received from
+		"server:port/CompanyInfo/rest/employeeDetailsInXml/{empno}"</p>
+	<p>function showEmployeesByName(String nameStr) : presents xml
+		received from "server:port/CompanyInfo/rest/employeesByNameInXml/{nameStr}"</p>
+
+</body>
+</html>
